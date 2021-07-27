@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Jenny's Silly Story Generator</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" href="style.css">
+        <!-- in order of specificity below, a is just element selector, .top is example of class selector, and #hero is identifier-->
+        <!-- The scaling meta content above is for loading on mobile phones better--
+    </head>
+    <!<comment></comment> CTRL+K+C comments things out. "ul is for unordered 
+        lists. li is for list items. <a> is for anchor items like links."  -->
+    <body class="bg-blue-100 text-center text-black grid place-items-center">
+       <header class="w-full bg-gradient-to-r from-blue-900 via-blue-400 to-blue-900 ... text-white md:flex md:justify-between">
+        <!--style="text-decoration: none; color: black" inline styling; would add to a-->
+        <p class="font-bold block px-10 py-6 font-serif text-2xl">Silly Story Generator</p>
+        <p>
+            Trace-Camp-01
+        </p> 
+    </header>
+    
+       <div>
+           <div class="py-6">
+           <label for="customname">Enter custom name:</label>
+           <input id="customname" type="text" placeholder="">
+         </div>
+         <div class="py-4">
+           <label for="us">US </label><input id="us" type="radio" name="ukus" value="us" checked>
+           <label for="uk">UK </label><input id="uk" type="radio" name="ukus" value="uk">
+         </div>
+        </div>
+           <button class="randomize px-3 py-1 rounded bg-blue-500 text-white">Generate your wacky writing prompt</button>
+         <div class="flex justify-center py-6">
+            <p class="story text-lg text-center bg-white rounded-md px-4 py-4">Your new story will go here!</p>
+        </div>
+   <div class="footer">
+    <!-- Copyright symbol is ALT+0169-->
+        © Copyright 2021 Jennifer Shaffer Brown. All rights reserved.  
+    </div>
+
+       
+    <script src="main.js"></script>
+    </body>
+
+</html>
